@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>云平台博客搭建实验报告</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>云平台博客搭建实验报告</h1>
+        <nav>
+            <a href="index.html">返回主页</a>
+        </nav>
+    </header>
+
+    <article class="container report">
+        <section>
+            <h2>实验目的</h2>
+            <p>掌握基于云服务器（如AWS/阿里云）的Web环境搭建，实现WordPress或静态博客的部署，并通过实验报告输出完整流程。</p>
+        </section>
+
+        <section>
+            <h2>技术栈</h2>
+            <ul>
+                <li>云服务器：Ubuntu 22.04 LTS</li>
+                <li>Web服务：Nginx</li>
+                <li>自动化部署：GitHub Actions</li>
+                <li>博客框架：Hexo</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>实验步骤</h2>
+            <ol>
+                <li>在阿里云购买ECS实例并配置安全组规则</li>
+                <li>通过SSH连接服务器安装Nginx环境</li>
+                <li>使用Git同步Hexo博客源码</li>
+                <li>配置域名解析与HTTPS证书</li>
+            </ol>
+            <img src="images/deploy-flow.png" alt="部署流程图">
+        </section>
+
+        <a href="index.html" class="button">返回主页</a>
+    </article>
+</body>
+</html>
