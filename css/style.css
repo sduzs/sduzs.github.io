@@ -78,3 +78,46 @@ body {
     border: 1px solid #ddd;
     margin: 1rem 0;
 }
+
+/* 实验报告专属样式 */
+.report .env-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.steps li {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid var(--secondary-color);
+    background: #fff;
+}
+
+.steps pre {
+    background: #282c34;
+    color: #abb2bf;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.steps img {
+    max-width: 80%;
+    border: 1px solid #ddd;
+    margin: 1rem auto;
+    display: block;
+}
+
+.conclusion ul {
+    columns: 2;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .conclusion ul {
+        columns: 1;
+    }
+}
